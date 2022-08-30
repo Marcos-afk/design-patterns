@@ -6,6 +6,12 @@ Repositório criado para armazenar códigos escritos durante o curso de padrões
 
 - [typescript](https://www.typescriptlang.org/)
 
+## :desktop_computer: Padronização de código
+
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [EditorConfig](https://editorconfig.org/)
+
 ## :rocket: Executando o projeto
 
 ```bash
@@ -13,4 +19,7 @@ Repositório criado para armazenar códigos escritos durante o curso de padrões
 
 yarn install
 
+// Concluindo a instalação rode
+
+yarn dev
 ```
