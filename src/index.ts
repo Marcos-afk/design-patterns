@@ -1,3 +1,4 @@
+import { MainDishBuilder } from './creational/builder/classes/main-dish-builder';
 import { myDatabase } from './creational/singleton/db/my-database';
 
 /* Singleton */
@@ -19,3 +20,11 @@ singletonSecondInstance.add({ name: 'Marcos Oliveira', email: 'teste' });
 singletonSecondInstance.list();
 singletonSecondInstance.remove('Marcos Melo');
 console.log('-------------------------------------');
+
+/* Builder */
+console.log('------------------------- Builder -----------------------');
+
+const mainDish = new MainDishBuilder();
+mainDish.makeMeal().makeBeverage();
+console.log(mainDish.getMeal());
+console.log(mainDish.getPrice());
