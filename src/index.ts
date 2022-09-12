@@ -1,5 +1,7 @@
 import { MainDishBuilder } from './creational/builder/classes/main-dish-builder';
 import { myDatabase } from './creational/singleton/db/my-database';
+import { validateEmail } from './structural/adapter/client';
+import { EmailValidatorAdapter } from './structural/adapter/validation/email-validator-adapter';
 
 /* Singleton */
 console.log('---------------- Singleton ------------------');
@@ -28,3 +30,7 @@ const mainDish = new MainDishBuilder();
 mainDish.makeMeal().makeBeverage();
 console.log(mainDish.getMeal());
 console.log(mainDish.getPrice());
+
+/* Adapter */
+
+validateEmail(new EmailValidatorAdapter(), 'marcosmelo@gamil.com');
